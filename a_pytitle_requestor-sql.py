@@ -1,5 +1,5 @@
 #############################################################################
-# 				Documentation				    #change150623
+# 				Documentation				    #
 #############################################################################
 #-d dbnavn -f a_vman2-teil1.txt -i x,y.c -o utfil
 # -r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x
@@ -9,9 +9,7 @@
 # 7-22Ql73VWY
 
 #WEHRMACHT 1939 - Uniform zu Kriegsbeginn erklärt!\n', 'https://www.youtube.com/embed/7-22Ql73VWY\n'
-# Python program to
-# demonstrate with
-# statement
+
 import urllib.request
 import json
 import urllib
