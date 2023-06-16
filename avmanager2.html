@@ -1,0 +1,236 @@
+<style>
+.ahclass {
+  white-space: pre-line;
+	 font-weight: bold;
+ color: blue;
+ height: 40px;
+}
+
+#picker {
+	
+	color: red;
+	xheight:100px;
+	xfont-size: 30px;
+}
+
+#filepicker {
+	
+	color: pink;
+	color: #5F9EA0;
+	xheight:100px;
+	xfont-size: 50px;
+}
+
+#line-break-and-tab {
+  white-space: pre-wrap;
+}
+.ifclass {
+	height: 550px;
+	width: 750px;
+	title: "bull";
+	
+</style>
+<script>
+var pemb = 'https://youtube.com/embed/';
+function ytadd(url, offset, key) {
+	console.log("ytadd4 " + url);
+	let posv = 0;
+	let posb = 0;
+	let posm= 0;
+	let ytflag = 1;
+	var modurl;
+let	urll= url.length;
+	posv = url.search("v=");
+	posb = url.search("youtu.be");
+	posm = url.search("embed");
+	console.log("ytman-ytadd-posv-posb-posm  " + " " + posv + " " + posb + " " + posm);
+if (urll == 28) {
+   //ids = posv + 2;
+} else if (urll ==  30) {
+    //ids = posb + 9;
+} else if (urll ==  41) {
+    //ids = posb + 9;
+} else if (urll == 999) {
+		  //ids = posm+ 20;
+} else if (urll ==  45) {
+    //ids = posb + 9;			
+} else if (urll == 43) {
+} else {
+	ytflag = 0;
+  console.log("invalid url length: " + urll + " " + url);
+}
+	if (posv != -1) {
+   ids = posv + 2;
+} else if (posb != -1) {
+    ids = posb + 9;
+} else if (posm != -1 ) {
+		  //jun8fix ids = posm+ 20;
+			ids = posm+ 6;
+} else {
+	ids=999; //chg010523
+	ytflag = 0;
+  console.log("invalid yt url:" + url);
+}
+console.log("ytman-ytadd-posv-posb-posm-ids-urll-key-ytflag-url" + " " + posv + " " + posb + " " + posm + " " + ids + " " + urll + " " + key + " " + ytflag +" " + url);
+//jun8 ytarray = get(key);
+if(ytflag == 1){
+	yid = url.substring(ids, url.length);
+	///ytarray = get(key);
+	console.log("debugyid ids  " + ids + "url.len " + url.length);
+	modurl= pemb + yid;
+} else {
+	//jun8 ytarray[ ytarray.length ] = url;
+	yid ="undef";
+	modurl=url
+}
+	//jun8console.log("trace-ytadd-ytarray " + ytarray);
+	console.log("trace-ytadd-ypemb " + pemb);
+	console.log("trace-ytadd-yid " + yid);
+	console.log("trace-ytadd-url " + url);
+	//jun8 console.log("trace-ytadd-key " + key);
+	console.log("trace-ytadd-modurl " + modurl);
+	return modurl;
+}
+
+function mycreate(psrc,pifid) {
+		 console.log("mycreate-enter: " + psrc);
+		 //return 0;
+		 //console.log(psrc);
+		 //console.log("mycreate1");
+            let iframe0 = document.createElement("iframe");
+            //iframe0.src = psrc;
+						 iframe0.setAttribute("src", psrc);
+						 iframe0.setAttribute("title", "iftitle");
+						  iframe0.setAttribute("name", "ifname");
+							iframe0.setAttribute("id", "ifid");
+							iframe0.setAttribute("class", "ifclass");
+							iframe0.setAttribute("type", "iftype");
+							//iframe0.title="iftitle";
+         iframe0.onload = () => {
+               //console.log("win-onload"); //document.body.appendChild(iframe0);
+							}
+						console.log("mycreate-append");	document.body.appendChild(iframe0);
+						//iframe0.setAttribute("title", "bulltitle2");
+						return iframe0;
+						}
+	</script>
+<script>
+	var ah;
+	var ahj=0;
+	var ahtx;
+	function ahref(ahtext, ahref) {
+	   ahj++;
+		 if (ahj==2) {
+			 ahj=0;
+		 }
+		 //ahtx = "<" + ahtext + ">";
+		 ahtx = ahtext;
+		ah = document.createElement('a');
+				  var ahid = "ahid" + ahj;
+					var ahclass = "ahclass";
+					var ahname = "ahname";
+					var ahtitle = "ahtitle";
+		ahr = document.createElement('hr');
+				  var ahrid = "ahrid" + ahj;
+					var ahrclass = "ahrclass";
+					var ahrname = "ahrname";
+		ahd = document.createElement('div');
+				  var ahrid = "ahdid" + ahj;
+					var ahrclass = "ahdclass";
+					var ahrname = "ahdname";			
+	 ah.setAttribute("id", ahid);
+	 ah.setAttribute("class", ahclass);
+	 ah.setAttribute("name", ahname);
+	 ah.setAttribute("title", ahtitle);
+	 ah.setAttribute("href", ahref);
+ahtx="\n" + ahtx; ah.appendChild(document.createTextNode(ahtx));
+   document.body.appendChild(ahd);
+   document.body.appendChild(ah);
+	 document.body.appendChild(ahd);
+	 document.body.appendChild(ahr);
+	 document.body.appendChild(ahd);
+ }
+</script>
+<script>
+ gtxt="bull";
+var openFile = function(event) {
+  var input = event.target;
+
+  var reader = new FileReader();
+  reader.onload = function() {
+    var text = reader.result;
+		var filename=input.files[0].name;
+		var fileurl=input.files[0].webkitRelativePath;
+		console.log("filname=" + filename + " url=" +  fileurl);
+		gtxt=text;
+		liner(gtxt);
+    var node = document.getElementById('output');
+    node.innerText = text;
+  };
+  reader.readAsText(input.files[0]);
+	console.log("input.files " + input.files[0].name);
+};
+</script>
+<div id='filepicker'>
+<h1>File picker</h1>
+<input type='file' id='picker' accept='text/plain' onchange='openFile(event)'><br>
+<div id='output'>
+  ...
+</div>
+</div>
+<script>
+	function liner(fuller) {
+	//var inputx = "Your large string with multiple new lines...\nnl1\nlinelast";
+	var input=fuller;
+var char = '\n';
+var i = j = k = 0;
+var cline;
+var clinetxt;
+var rem;
+while ((j = input.indexOf(char, i)) !== -1) {
+	cline=input.substring(i, j);
+	var comment = cline.search("1");
+	comment=cline.substr(0,1);
+	console.log("comment " + comment);
+	if (comment == "*") {
+		console.log("comment " + comment);
+		i = j + 1;
+		k = k+1;
+		continue;
+	}
+	//j8cline=ytadd(cline,0.0);
+	rem=k%2;
+	if (rem == 0) {
+		console.log('rem0');
+		clinetxt=cline;
+	  comment2=cline.substr(0,1);
+	} else {
+		console.log('remnot0');
+		cline=ytadd(cline,0.0);
+	 ahref(clinetxt,cline);
+	 if (comment2 != "#") {
+		console.log("comment2 " + comment2);
+		mycreate(cline,clinetxt);
+	}
+	 //jun9mycreate(cline,clinetxt);
+	}
+	console.log(cline);
+	console.log('i ' + i + ' j ' + j + ' k ' + k);
+  i = j + 1;
+	k = k+1;
+}
+cline=input.substring(i);
+console.log(cline);
+console.log('i ' + i + ' j ' + j + ' k ' + k);
+rem=k%2;
+if (rem == 0) {
+		console.log('rem0last');
+		clinetxt=cline;
+	} else {
+		console.log('remnot0last');
+		cline=ytadd(cline,0.0);
+	 ahref(clinetxt,cline);
+	 mycreate(cline,clinetxt);
+ }
+}
+</script>
