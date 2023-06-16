@@ -1,0 +1,742 @@
+<!doctype html><html>
+<head>
+<title>Document</title>
+<style>
+#ahid1 {
+ font-weight: bold;
+ xcolor: pink;
+ color: blue;
+ font-size: 55px;
+ vertical-align: middle;
+ line-height: 70px;
+}
+#ahid0 {
+ font-weight: bold;
+ xcolor: pink;
+ color: magenta;
+ font-size: 55px;
+ vertical-align: middle;
+ line-height: 70px;
+}
+p span {
+ font-weight: bold;
+ xcolor: pink;
+ color: purple;
+ font-size: 35px;
+}
+#hbesid {
+ font-weight: bold;
+ xcolor: purple;
+ xcolor: #EE82EE;
+ color: #8B0000;
+ xcolor: #Ff4500;
+ xcolor: #000080;
+ font-size: 20px;
+}
+rspan { display: table-cell; height: (your-height + px); vertical-align: middle; }
+
+xiframe {
+	height: 300px;
+	width: 250px;
+	title: "bull";
+}
+.ifclassx {
+	height: 500px;
+	width: 800px;
+	title: "bull";
+}
+#archive {
+	height: 500px;
+	width: 750px;
+	title: "bull";
+}
+a {
+ font-weight: bold;
+ color: blue;
+ height: 30px;
+  length: 30px;
+  xdisplay: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+	xdisplay: block;
+	zoom:1;
+	width:150px;
+	word-wrap:break-word;
+	font-size: 30px;
+}
+xh6 {
+ font-weight: bold;
+ color: red;
+ height: 30px;
+  length: 30px;
+  xdisplay: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+	xdisplay: block;
+	zoom:1;
+	width:150px;
+	xword-wrap:break-word;
+	font-size: 15px;
+}
+span {
+ font-weight: bold;
+ color: red;
+ height: 30px;
+  length: 30px;
+  xdisplay: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+	xdisplay: block;
+	zoom:1;
+	width:150px;
+	word-wrap:break-word;
+	font-size: 8px;
+}
+xspan {
+ font-weight: bold;
+ color: red;
+ height: 30px;
+  length: 30px;
+  xdisplay: inline-block;
+	vertical-align: middle;
+	line-height: 5px;
+	display: block;
+	zoom:1;
+	width:150px;
+	word-wrap:break-word;
+}
+
+spans {
+    border: solid 1px;
+    border-color: gray;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 17px;
+    padding-top: 6px;
+    display: inline-block;
+    line-height: 0px;
+	}
+	inputx {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;i
+  display: inline-block;
+  font-size: 25px;
+}
+input {
+  xbackground-color: #4CAF50; /* Green */
+  xborder: none;
+  xcolor: white;
+  xpadding: 15px 32px;
+  xtext-align: center;
+  xtext-decoration: none;
+  xdisplay: inline-block;
+  font-size: 35px;
+}
+  button {
+  xbackground-color: #4CAF50; /* Green */
+  xborder: none;
+  xcolor: white;
+  xpadding: 15px 32px;
+  xtext-align: center;
+  xtext-decoration: none;
+  xdisplay: inline-block;
+  font-size: 35px;
+}
+a {
+  xbackground-color: #4CAF50; /* Green */
+  xborder: none;
+  xcolor: white;
+  xpadding: 15px 32px;
+  xtext-align: center;
+  xtext-decoration: none;
+  x3display: inline-block;
+  font-size: 35px;
+}
+
+h1 {
+	font-size: 45px;
+	color: pink;
+}
+</style>
+<body>
+<!--iframex src="https://www.youtube.com/embed/X3cV2Qj4M3g" width="400" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe-->
+<!--script src="test.js"></script-->
+<h1 id="idh1">Audio and video manager (textastic)</h1>
+<div class="blank-line">
+ <hr>
+</div>
+<p><a href="https://www.classynemesis.com/projects/ytembed//">Custom Video Embed Generator 4 YT</a></p>
+<div class="blank-line">
+ <hr>
+</div>
+<!--p> the word generated is <span></span></p-->
+<p><span></span></p>
+<label for="textInput1">Url: </label>
+<button>Urlall</button>
+<button>Urlallnonyt</button>
+<div class="blank-line">
+ <hr>
+</div>
+<label for="textInput1">Input: </label>
+<input type="text" id="textInput1" />
+<button type="button" onclick="getInputValue()">
+      Get Tema From Input
+</button>
+<!--h3>Output:</h3-->
+<p id="output"></p>
+<script>
+//**********************
+var testi=[];
+      function getInputValue() {
+        //let inputValue =
+			   inputValue =	document.getElementById("textInput1").value;
+        document.getElementById("output").innerHTML = inputValue;
+			localStorage.setItem("inputValue",inputValue);
+			testi = inputValue;
+			//230502alert("testi " + testi);
+				location.reload();
+      }
+</script>
+<div class="blank-line">
+ <hr>
+</div>
+<label for="textInput2">Input2: </label>
+<input type="text" id="textInput2" />
+<button type="button" onclick="getInputValue2()">
+      Get jsx From Input2
+</button>
+<!--h3>Output2:</h3-->
+<p id="output2"></p>
+<div class="blank-line">
+ <hr>
+</div>
+<script>
+//******************************
+var testi2=[];
+      function getInputValue2() {
+        //let inputValue =
+			   inputValue2 =	document.getElementById("textInput2").value;
+        document.getElementById("output2").innerHTML = inputValue2;
+			localStorage.setItem("inputValue2",inputValue2);
+			testi2 = inputValue2;
+			//230502alert("testi2 " + testi2);
+				location.reload();
+      }
+		</script>
+<script>
+//-----------------
+// scripts
+//----------------/
+
+	var bsch = "";
+	var bschj = 0;
+	var temachg = 0;
+	var beschold = 0;
+	var eot = 0;
+	var sot = 0;
+  var inputValue =
+	localStorage.getItem("inputValue");
+	if (inputValue == "") {
+		inputValue = "temall";
+	}
+ var inputValue2 =
+	localStorage.getItem("inputValue2");
+	if (inputValue2 == "") {
+		inputValue2 = "1,2,3";
+	}
+	
+ var showurl = 	localStorage.getItem("showurl");
+	 console.log("showurl" + " " + showurl);
+	//230502 alert("showurl-inputValues " + showurl + " " + inputValue + " " + inputValue2);
+	 let span = document.querySelectorAll('p span').item(0);
+   span.textContent = "Tema: " + inputValue + " jsx: " + inputValue2 + " showurl: " + showurl;
+ document.getElementById("output").innerHTML = inputValue;
+ document.getElementById("output2").innerHTML = inputValue2;
+ document.getElementById("textInput1").innerHTML = inputValue;
+ var x2 =document.getElementById("textInput2");
+ var x1 =document.getElementById("textInput1");
+ var tsti = document.querySelectorAll('input').item(0);
+ x1.value = inputValue;
+ x2.value = inputValue2;
+ //230502alert("bull" + tsti + " " + x2);
+ 
+ //230502alert("bull" + tsti.textContent + " " + x2.textContent);
+ //230502alert("x1 " + x1.textContent + " x 2 " + x2.textContent);
+//##########################
+// 1st button sua
+//###################
+var button = document.querySelectorAll('button').item(0);
+button.addEventListener('click', function(event){
+     let span = document.querySelectorAll('p span').item(0);
+     let suro = localStorage.getItem("showurl");
+		 let surn = "";
+		 let msgpre = suro + " --> " + surn;
+     console.log("showurl1-old" + " " + suro);
+     localStorage.setItem("showurl", "sua");
+     surn = localStorage.getItem("showurl");
+     span.textContent = suro + " --> " + surn;
+     let msg2 = suro + " --> " + surn;
+     alert("pre-reload11 " + msg2);
+     location.reload();
+     alert("pst-reload12 " + msg2);
+});
+//##########################
+// 2nd button suany
+//###################
+var button = document.querySelectorAll('button').item(1);
+button.addEventListener('click', function(event){
+     let span = document.querySelectorAll('p span').item(0);
+     let suro = localStorage.getItem("showurl");
+		 let surn = "";
+		 let msgpre = suro + " --> " + surn;
+     console.log("showurl1-old" + " " + suro);
+     localStorage.setItem("showurl", "suany");
+     surn = localStorage.getItem("showurl");
+     span.textContent = suro + " --> " + surn;
+     let msg2 = suro + " --> " + surn;
+     alert("pre-reload2 " + msg2);
+     location.reload();
+     alert("pst-reload22 " + msg2);
+	 });
+//##########################
+// 2nd button suany
+//###################
+
+//##########################
+// button 0 mal
+//###################
+
+
+//##########################
+// h1 function
+//###################
+
+function h1(text, h1f) {
+	   bschj++;
+		 bsch = bsch + text;
+		 var h1;
+		 if (eot == 1) {
+			// alert("h1eot " + bschj + text);
+		 }
+//if (bschj == 3 || (eot == 1 && bschj < 3 && bschj
+		 if (bschj == 3 || (eot == 1 )) {
+			 if ( eot == 1 && bschj != 3) {
+         h1 = document.createElement('h5');
+				  var besid = "hbesid";
+					var besclass = "hbesclass";
+					var besname = "hbesname";
+					var bestitle = "hbestitle";
+	    } else {
+		 //var h1 = document.createElement('p');
+		   h1 = document.createElement('span');
+			    var besid = "sbesid";
+					var besclass = "sbesclass";
+					var besname = "sbesname";
+					var bestitle = "sbestitle";
+	 }
+	 h1.setAttribute("id", besid);
+	 h1.setAttribute("class", besclass);
+	 h1.setAttribute("name", besname);
+	 h1.setAttribute("title", bestitle);
+//h1.appendChild(document.createTextNode(text));
+	 h1.appendChild(document.createTextNode(bsch))
+     document.body.appendChild(h1);
+		 bsch = "";
+		 bschj = 0;
+		 temachg = 0;
+	  }
+		//h1f.appendChild(h1);
+		
+}
+//---------
+// Experiment
+//---------/
+var counter = 0;
+var timer = setInterval(function() {
+  ++counter;
+  //h1("Hi #" + counter);
+  if (counter == 5) {
+    clearInterval(timer);
+  }
+}, 500);
+</script>
+<!--audio controls>
+      <source src="sound.ogg" type="audio/ogg">
+      <source src="audio_sample_1.mp3" type="audio/mpeg">
+			</audio-->
+
+<!--iframe>
+      src="ringsendung.mp3" name=="iname">
+				title="shit";
+				<a href="ringsendung.mp3">Advertisement</a>
+			</iframe-->	
+			<script>
+				//alert("bull");
+			</script>
+<!--video width="1024" height="576" controls>
+    <source src="Glatzoben.mp4" type="video/mp4">
+    <source src="Glatzoben.mp4" type="video/ogg">
+		</video-->
+		
+<!--audio controls>
+      <source src="sound.ogg" type="audio/ogg">
+      <source src="ringsendung.mp3" type="audio/mpeg">
+			</audio-->		
+		
+ <script>
+	 
+	 console.log("init");
+	 //iframe = document.createElement("iframe");
+	 window.onload = () => {
+		 console.log("win-onload-init");
+               //alert("win-onloadinit");
+						 }
+var pemb = 'https://youtube.com/embed/';
+//mycreatev(Glatzoben.mp4,0);
+	var map = {
+    misch: [],
+    future: [],
+    favorits: [],
+		archive: [],
+		ostfront: [
+//'https://youtube.com/embed/xkl--zh80Sw',
+//'https://youtube.com/embed/dSKqqw511do',
+//'https://youtube.com/embed/LGaRPNdNSoU',
+//'https://youtube.com/embed/xkl--zh80Sw'
+] ,
+		reich3: [ 
+//'https://www.youtube.com/embed/X3cV2Qj4M3g', 
+//'https://www.youtube.com/embed/XjAKNaKwBfI',
+//'https://www.youtube.com/embed/osT2UWXItUs', 
+//'https://www.youtube.com/embed/bYNQmPjcvN0', 
+//'https://www.youtube.com/embed/sRajoqy9-oA'
+], 
+  musik: [ 
+],
+ytonly: [ 
+]	
+};
+ </script>
+	 <script>
+	function mycreatea(psrc,pifid) {
+		 console.log("mycreatea-enter: " + psrc);
+		 //console.log(psrc);
+		 //console.log("mycreate1");
+            let x = document.createElement("audio");
+           // iframe0.src = psrc;
+						//iframe0.type="video/mp4";
+						//iframe0.width="512";
+						//iframe0.height="276"
+		if (x.canPlayType("audio/mp3")) {
+    x.setAttribute("src", psrc);
+} else {
+    x.setAttribute("src","psrc");
+}
+
+//x.setAttribute("width", "100");
+//x.setAttribute("height", "240");
+x.setAttribute("type", "audio/mpeg");
+x.setAttribute("controls", "controls");				
+         x.onload = () => {
+               //console.log("win-onload"); //document.body.appendChild(iframe0);
+							}
+						console.log("mycreatev-append");	document.body.appendChild(x);
+						return x;
+					}	 
+					
+	//mycreatea("ringsendung.mp3",0);		
+	
+	function mycreatev(psrc,pifid) {
+		 console.log("mycreatev-enter: " + psrc);
+		 //console.log(psrc);
+		 //console.log("mycreate1");
+            let x = document.createElement("video");
+           // iframe0.src = psrc;
+						//iframe0.type="video/mp4";
+						//iframe0.width="512";
+						//iframe0.height="276"
+		if (x.canPlayType("video/mp4")) {
+    x.setAttribute("src", psrc);
+} else {
+    x.setAttribute("src","movie.ogg");
+}
+
+x.setAttribute("width", "320");
+x.setAttribute("height", "240");
+x.setAttribute("controls", "controls");				
+         x.onload = () => {
+               //console.log("win-onload"); //document.body.appendChild(iframe0);
+							}
+						console.log("mycreatev-append");	document.body.appendChild(x);
+						return x;
+					}	 
+					
+			//mycreatev("Glatzoben.mp4",0);		
+			
+	 function mycreate(psrc,pifid) {
+		 console.log("mycreate-enter: " + psrc);
+		 //return 0;
+		 //console.log(psrc);
+		 //console.log("mycreate1");
+            let iframe0 = document.createElement("iframe");
+            //iframe0.src = psrc;
+						 iframe0.setAttribute("src", psrc);
+						 iframe0.setAttribute("title", "iftitle");
+						  iframe0.setAttribute("name", "ifname");
+							iframe0.setAttribute("id", "ifid");
+							iframe0.setAttribute("class", "ifclass");
+							iframe0.setAttribute("type", "iftype");
+							//iframe0.title="iftitle";
+         iframe0.onload = () => {
+               //console.log("win-onload"); //document.body.appendChild(iframe0);
+							}
+						console.log("mycreate-append");	document.body.appendChild(iframe0);
+						//iframe0.setAttribute("title", "bulltitle2");
+						return iframe0;
+						}
+	</script>
+<script>
+	
+//*****************************
+//https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_search2
+//https://www.programiz.com/javascript/comparison-logical
+var u;
+var ob = 17;
+var om = 30;
+var key = "ostfront"
+//https://youtu.be/e02gCdAtg3M
+//https://youtu.be/e02gCdAtg3M
+//https://youtube.com/embed uboot
+//u='https://archive.org/details/reichskanzlei-and-fuhrerbunker-now-and-then-battle-of-berlin-increible-ww-2-aftermath';
+//ytadd(u,50,"archive");
+//ytadd(u,50,"archive");
+//see jsx below
+//************
+
+//************
+
+function ytadd(url, offset, key) {
+	let posv = 0;
+	let posb = 0;
+	let posm= 0;
+	let ytflag = 1;
+let	urll= url.length;
+	posv = url.search("v=");
+	posb = url.search("youtu.be");
+	posm = url.search("embed");
+	//console.log("ytman-ytadd-posv-posb-posm  " + " " + posv + " " + posb + " " + posm);
+	if (urll == 28) {
+   //ids = posv + 2;
+} else if (urll ==  41) {
+    //ids = posb + 9;
+} else if (urll == 999) {
+		  //ids = posm+ 20;
+} else {
+	ytflag = 0;
+  console.log("invalid url length: " + urll + " " + url);
+}
+	if (posv != -1) {
+   ids = posv + 2;
+} else if (posb != -1) {
+    ids = posb + 9;
+} else if (posm != -1 ) {
+		  ids = posm+ 20;
+} else {
+	ids=999; //chg010523
+	ytflag = 0;
+  console.log("invalid yt url:" + url);
+}
+console.log("ytman-ytadd-posv-posb-posm-ids-urll-key-ytflag-url" + " " + posv + " " + posb + " " + posm + " " + ids + " " + urll + " " + key + " " + ytflag +" " + url);
+ytarray = get(key);
+if(ytflag == 1){
+	yid = url.substring(ids, url.length);
+	///ytarray = get(key);
+	ytarray[ ytarray.length ] = pemb + yid;
+} else {
+	ytarray[ ytarray.length ] = url;
+	yid ="undef";
+}
+	console.log("trace-ytadd-ytarray " + ytarray);
+	console.log("trace-ytadd-ypemb " + pemb);
+	console.log("trace-ytadd-yid " + yid);
+	console.log("trace-ytadd-url " + url);
+	console.log("trace-ytadd-key " + key);
+} console.log(Object.entries(map));
+
+function get(k) {
+    return map[k];
+	}
+//--------------------------
+// create tema
+//--------------------------
+function createTema(tema) {
+	//chg010523
+	if (tema != inputValue ) {
+		if (inputValue != "temall") {
+		// alert(tema + "skipped" + "iv" + inputValue);
+		 return;
+	  }
+	}
+	temachg = 1;
+	eot = 0;
+	sot = 1;
+  var x=get(tema);
+	console.log(Object.entries(map)); 
+	let j = 0;
+	//bsch = "";
+	//bschj = 0;
+//--------------------------
+// The loop -----------------
+//--------------------------
+while (j < x.length) {
+	  if (j ==  x.length -1 || tema == "archive") {
+			//alert("eot " + tema);
+			eot =1;
+		}
+	  console.log("loop4: " + x[j]);
+		newif=mycreate(x[j]);
+		newif.setAttribute("id",tema);
+		if ((tema == "xarchive" || tema == "ytonly") && (showurl == "suany" || showurl == "sua")) {
+			//h1(tema + "- " + j + " -" + x[j], newif);
+			//h1(tema + "- " + j + " -" + x[j], newif);
+			h1("  " + x[j], newif);
+	} else if (showurl == "sua") {
+		  h1("  " + x[j], newif);
+	}
+		console.log("newif" + newif);
+		console.log (newif.title);
+		//newif.setAttribute("title", "newframe");
+		console.log (newif.title);
+		//newif.setAttribute("name", "newframe");
+		//chg010523 comented following 3l
+		//newif.hasAttribute("title");
+		//newif.setAttribute("length", 500);
+		//newif.setAttribute("controls", true);
+    j++;
+		temachg= 0;
+ }//	
+//eot--------------
+
+}
+//**********************************
+ jsx=[1,1,1,1];
+ jsx=inputValue2.split(",", inputValue2.length);
+ //230502alert("jsx " + jsx);
+</script>
+<script src="a_vman-x0.js"></script>
+<script src="a_vman-x1.js"></script>
+
+<h1 id="ostfront"></h1>
+<script>
+	//var mytema = prompt("tema", "archive");
+var tema="ostfront";	document.getElementById("ostfront").innerHTML = tema;
+createTema(tema);
+</script>
+<h1 id="reich3"></h1>
+<script>
+var tema="reich3";
+	createTema(tema);
+document.getElementById("reich3").innerHTML = tema;
+</script>
+<h1 id="musik"></h1>
+<script>
+var tema="musik";
+	createTema(tema);	document.getElementById("musik").innerHTML = tema;
+//***************************************
+	</script>
+<h1 id="favorits"></h1>
+<script>
+var tema="favorits";
+	createTema(tema);
+	document.getElementById("favorits").innerHTML = tema;
+	//**************
+	</script>
+<h1 id="future"></h1>
+<script>
+var tema="future";
+	createTema(tema);	document.getElementById("future").innerHTML = tema;
+	//**************
+	</script>
+<h1 id="misch"></h1>
+<script>
+var tema="misch";
+	createTema(tema);	document.getElementById("misch").innerHTML = tema;
+	//**************
+		//**************
+	</script>
+<h1 id="ytonly"></h1>
+<script>
+var tema="ytonly";
+	newif=createTema(tema);	document.getElementById("ytonly").innerHTML = tema;
+	//**************
+</script>
+	<h1 id="archiveh"></h1>
+<script>
+var tema="archive";
+	createTema(tema);	document.getElementById("archiveh").innerHTML = tema;
+	//**************
+</script>
+<p></p>
+<h1>*******************************************************</h1>
+
+<script>
+	var ah;
+	var ahj=0;
+	var ahtx;
+	function ahref(ahtext, ahref) {
+	   ahj++;
+		 if (ahj==2) {
+			 ahj=0;
+		 }
+		 //ahtx = "<" + ahtext + ">";
+		 ahtx = ahtext;
+		ah = document.createElement('a');
+				  var ahid = "ahid" + ahj;
+					var ahclass = "ahclass";
+					var ahname = "ahname";
+					var ahtitle = "ahtitle";
+		ahr = document.createElement('hr');
+				  var ahrid = "ahrid" + ahj;
+					var ahrclass = "ahrclass";
+					var ahrname = "ahrname";
+		ahd = document.createElement('div');
+				  var ahrid = "ahdid" + ahj;
+					var ahrclass = "ahdclass";
+					var ahrname = "ahdname";			
+	 ah.setAttribute("id", ahid);
+	 ah.setAttribute("class", ahclass);
+	 ah.setAttribute("name", ahname);
+	 ah.setAttribute("title", ahtitle);
+	 ah.setAttribute("href", ahref);
+ ah.appendChild(document.createTextNode(ahtx));
+   document.body.appendChild(ahd);
+   document.body.appendChild(ah);
+	 document.body.appendChild(ahd);
+	 document.body.appendChild(ahr);
+	 document.body.appendChild(ahd);
+	}
+t='koreakrieg-arte-130523';
+h="https://www.arte.tv/de/videos/078704-001-A/der-ewige-korea-krieg";
+//ahref(t,h);
+t="International covid summit 3";
+h="https://live.childrenshealthdefense.org/chd-tv/events/fluoride-report-or-systematic-review-of-the-science-or-may-4-or-12-30pm-et/fluoride-report-systematic-review-of-the-science-may-4";
+//ahref(t,h);
+</script>
+<script src="a_vman-x2.js"></script>
+<!--p><a href="https://www.arte.tv/de/videos/078704-001-A/der-ewige-korea-krieg';">Koreakrieg 13.5. </a></p-->
+<div class="blank-line">
+ <hr>
+</div>
+
+<!--p><a href="https://live.childrenshealthdefense.org/chd-tv/events/fluoride-report-or-systematic-review-of-the-science-or-may-4-or-12-30pm-et/fluoride-report-systematic-review-of-the-science-may-4">International covid summit 3</a></p-->
+<div class="blank-line">
+ <hr>
+</div>
+
+</body>
+</html>
