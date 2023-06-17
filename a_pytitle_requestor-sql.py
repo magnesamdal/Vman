@@ -1,5 +1,5 @@
 #############################################################################
-# 				Documentation				    #
+# 				Documentation				    #change150623
 #############################################################################
 #-d dbnavn -f a_vman2-teil1.txt -i x,y.c -o utfil
 # -r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x
