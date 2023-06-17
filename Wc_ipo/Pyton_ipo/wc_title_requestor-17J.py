@@ -1,6 +1,11 @@
 #############################################################################
 # 				Documentation				    #
 #############################################################################
+#change history
+#170623 - ignote * if opt -s
+
+#-r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x -f a_vman2-teil1.txt -s  x
+
 #-d dbnavn -f a_vman2-teil1.txt -i x,y.c -o utfil
 # -r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x
 #-r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x -f a_vman2-teil1.txt
@@ -447,6 +452,9 @@ with open(pyfile, encoding="utf-8") as fp:
           print("specialstar")
           special_star=1
           special=1
+          if opt_s != 0:
+            print("skip4star {} ".format(line))
+            continue
         else:
           print("nospecialstar")
 
