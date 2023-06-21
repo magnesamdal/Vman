@@ -1,6 +1,11 @@
 #############################################################################
-# 				Documentation				    #change150623
+# 				Documentation				    #
 #############################################################################
+
+#-r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x -f a_vman2-teil1.txt -d ../19juni.db
+
+#-r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x -f a_vman2-teil1.txt -d ../../19juni.db
+
 #-d dbnavn -f a_vman2-teil1.txt -i x,y.c -o utfil
 # -r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x
 #-r %tes% -i test2,test2,7-22Ql73VWY -o pyfileout.txt -p x -f a_vman2-teil1.txt
@@ -9,6 +14,7 @@
 # 7-22Ql73VWY
 
 #WEHRMACHT 1939 - Uniform zu Kriegsbeginn erklärt!\n', 'https://www.youtube.com/embed/7-22Ql73VWY\n'
+
 
 import urllib.request
 import json
@@ -21,6 +27,7 @@ import hashlib
 import datetime
 import sys, getopt
 import argparse
+import os
 #############################################################################
 # 				globals		    #
 #############################################################################
@@ -88,15 +95,7 @@ print(db_name)
 
 sqv=sqlite3.version
 print(sqv)
-#############################################################################
-# 				sql connect		    #
-#############################################################################
-print("db_connect-e")
-#verbindung = sqlite3.connect("vman3.db")
-#verbindung = sqlite3.connect("vman445.db")
-verbindung = sqlite3.connect(database=database)
-zeiger = verbindung.cursor()
-print("-------------------------")   
+
 #############################################################################
 # 				create table			    #
 #############################################################################
@@ -125,7 +124,7 @@ def db_create_tab():
   verbindung.commit()
   print("db_init-x")
  
-db_create_tab()
+#db_create_tab()
 
 
 #############################################################################
@@ -182,7 +181,8 @@ if args.cat:
 if args.write:
 	#lpat=args.cat
 	opt_w=1
-	db_insert=1
+	#jun20db_insert=1
+	db_insert_w=1
 	print("write")
 if args.put:
 	#lpat=args.cat
@@ -394,6 +394,7 @@ def yt_get_tit(yt_id):
    #print("tryurl")
   #except:
    #print("excepturl")
+
 	with urllib.request.urlopen(url) as response:
 	    response_text = response.read()
 	    data = json.loads(response_text.decode())
@@ -402,6 +403,18 @@ def yt_get_tit(yt_id):
 	    #print(VideoID)
 	    print (f"URLlIB\n{yt_id} tit={data['title']}")
 	    return  data['title']
+#############################################################################
+# 				sql connect		    #
+#############################################################################
+print(os.getcwd())
+print("currdir-------5555 {} ".format(os.getcwd()))
+print("db_connect-e {} ".format(database_t))
+#verbindung = sqlite3.connect("vman3.db")
+#verbindung = sqlite3.connect("vman445.db")
+verbindung = sqlite3.connect(database=database_t)
+zeiger = verbindung.cursor()
+print("-----------------ggggg--------")  
+db_create_tab() 
 #############################################################################
 # 				main	   loop #
 #############################################################################
@@ -761,4 +774,3 @@ print("title1 {} ".format(ytitle))
 #urls_arr=['xyz.com','ybk.com']
 #for i in urls_arr:
 #    st.markdown(f"<iframe src='{i}'></iframe>", unsafe_allow_html=True)
-
