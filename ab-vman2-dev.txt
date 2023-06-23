@@ -1,0 +1,14 @@
+github
+https://github.com/
+github ms
+https://magnesamdal@github.com
+github ms vman
+https://github.com/magnesamdal/Vman/
+book git opensrc
+https://opensource.com/life/16/7/how-restore-older-file-versions-git
+book git atlassian
+https://www.atlassian.com/de/git/tutorials/using-branches/git-checkout
+book git gitready
+http://de.gitready.com/beginner/2009/01/18/the-staging-area.html
+book git scm
+https://git-scm.com/book/de/v2/Git-Grundlagen-Anzeigen-der-Commit-Historie
